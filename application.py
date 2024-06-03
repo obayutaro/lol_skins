@@ -55,4 +55,4 @@ def champion(champion_id, champion_key):
     return render_template('champion.html', champion_id=champion_id, champion_key=champion_key, skins=skins, owned_skins=owned_skins)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0",debug=False)
